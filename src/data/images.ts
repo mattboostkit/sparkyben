@@ -17,7 +17,7 @@ export interface ServiceImage {
 // Brand assets
 export const brandImages = {
   logo: {
-    primary: "https://ik.imagekit.io/boostkit/SparkyBen/SparkyBen.webp?updatedAt=1744387112774",
+    primary: "https://ik.imagekit.io/boostkit/SparkyBen/SparkyBen_Logo.webp?updatedAt=1745853082858",
     white: "https://ik.imagekit.io/boostkit/SparkyBen/SparkyBen_White.webp?updatedAt=1744387250131",
     alt: "Sparkyben Electrical Logo"
   }
@@ -158,28 +158,28 @@ export const getHeroImageAlt = (page: string): string => {
 };
 
 export const getServiceCardImage = (serviceId: string): string => {
-  const serviceKey = Object.keys(serviceImages).find(key => 
+  const serviceKey = Object.keys(serviceImages).find(key =>
     key.toLowerCase() === serviceId.toLowerCase() ||
     key.toLowerCase().replace(/[^a-z0-9]/g, '') === serviceId.toLowerCase().replace(/[^a-z0-9]/g, '')
   );
-  
+
   return serviceKey ? serviceImages[serviceKey].card : serviceImages.newBuilds.card;
 };
 
 export const getServiceDetailImage = (serviceId: string): string => {
-  const serviceKey = Object.keys(serviceImages).find(key => 
+  const serviceKey = Object.keys(serviceImages).find(key =>
     key.toLowerCase() === serviceId.toLowerCase() ||
     key.toLowerCase().replace(/[^a-z0-9]/g, '') === serviceId.toLowerCase().replace(/[^a-z0-9]/g, '')
   );
-  
+
   return serviceKey ? serviceImages[serviceKey].detail : serviceImages.newBuilds.detail;
 };
 
 export const getServiceImageAlt = (serviceId: string): string => {
-  const serviceKey = Object.keys(serviceImages).find(key => 
+  const serviceKey = Object.keys(serviceImages).find(key =>
     key.toLowerCase() === serviceId.toLowerCase() ||
     key.toLowerCase().replace(/[^a-z0-9]/g, '') === serviceId.toLowerCase().replace(/[^a-z0-9]/g, '')
   );
-  
+
   return serviceKey ? serviceImages[serviceKey].alt : serviceImages.newBuilds.alt;
 };

@@ -25,9 +25,9 @@ export default {
           danger: '#E74C3C',   // Danger red
         },
         teal: {
-          DEFAULT: '#51DBB1',  // Bright teal accent color
-          light: '#7DE5C3',    // Lighter teal for hover effects
-          dark: '#3AC79D'      // Darker teal for active states
+          DEFAULT: '#70BBC5',  // New teal accent color
+          light: '#8FCBD3',    // Lighter teal for hover effects
+          dark: '#5EAAB4'      // Darker teal for active states
         }
       },
       fontFamily: {

@@ -12,12 +12,12 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div>
             <Link to="/" className="flex items-center mb-4">
-              <img 
-                src={brandImages.logo.white} 
-                alt={brandImages.logo.alt} 
+              <img
+                src={brandImages.logo.white}
+                alt={brandImages.logo.alt}
                 className="h-10 mr-2"
                 width={160}
-                height={48} 
+                height={48}
               />
             </Link>
             <p className="mb-4 text-neutral-light text-sm">
@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
               </a>
             </div>
           </div>
-          
+
           {/* Services */}
           <div>
             <h3 className="font-heading font-bold text-lg mb-4">Our Services</h3>
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
-          
+
           {/* Contact Information */}
           <div>
             <h3 className="font-heading font-bold text-lg mb-4">Contact Us</h3>
@@ -88,7 +88,7 @@ const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
-          
+
           {/* Accreditations */}
           <div>
             <h3 className="font-heading font-bold text-lg mb-4">Accreditations</h3>
@@ -116,7 +116,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Copyright Footer */}
       <div className="bg-secondary-light py-4">
         <div className="container mx-auto px-4 text-center text-neutral-light text-sm">

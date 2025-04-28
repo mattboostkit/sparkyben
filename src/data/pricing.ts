@@ -50,7 +50,7 @@ export const pricingItems: PricingItem[] = [
     description: 'For work carried out during weekend nights.',
     category: 'hourly-rates'
   },
-  
+
   // Common Services
   {
     id: 'new-socket',
@@ -71,14 +71,14 @@ export const pricingItems: PricingItem[] = [
   {
     id: 'consumer-unit',
     service: 'Consumer Unit Replacement',
-    price: 'FROM £750',
+    price: 'From £750',
     description: 'Supply and installation of a modern consumer unit with RCBO protection.',
     category: 'common-services'
   },
   {
     id: 'eicr',
     service: 'Electrical Installation Condition Report (EICR)',
-    price: 'FROM £200',
+    price: 'From £200',
     unit: '1-2 bedroom property',
     description: 'Full inspection and test of existing electrical installation.',
     category: 'common-services'
@@ -86,41 +86,41 @@ export const pricingItems: PricingItem[] = [
   {
     id: 'eicr-large',
     service: 'EICR (3+ bedroom property)',
-    price: 'FROM £250',
+    price: 'From £250',
     description: 'Price varies based on property size and complexity.',
     category: 'common-services'
   },
-  
+
   // Larger Projects
   {
     id: 'rewire-small',
     service: 'Full Rewire (1-2 bedroom property)',
-    price: 'FROM £2500',
+    price: 'From £2500',
     description: 'Complete rewiring of smaller property including consumer unit.',
     category: 'larger-projects'
   },
   {
     id: 'rewire-large',
     service: 'Full Rewire (3+ bedroom property)',
-    price: 'FROM £3500',
+    price: 'From £3500',
     description: 'Complete rewiring of larger property including consumer unit.',
     category: 'larger-projects'
   },
   {
     id: 'ev-charger',
     service: 'EV Charging Point Installation',
-    price: 'FROM £650',
+    price: 'From £650',
     description: 'Supply and installation of electric vehicle charging point.',
     category: 'larger-projects'
   },
   {
     id: 'solar-small',
     service: 'Solar PV System (2-4kW)',
-    price: 'FROM £4000',
+    price: 'From £4000',
     description: 'Supply and installation of solar panel system for typical home.',
     category: 'larger-projects'
   },
-  
+
   // Commercial
   {
     id: 'commercial-inspection',
@@ -166,8 +166,8 @@ export const pricingCategories = [
 ];
 
 export const paymentMethods = [
-  'Credit/Debit Cards', 
-  'Bank Transfer', 
-  'Cash', 
+  'Credit/Debit Cards',
+  'Bank Transfer',
+  'Cash',
   'Cheque'
 ];

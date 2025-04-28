@@ -11,6 +11,8 @@ import Contact from './pages/Contact';
 import Testimonials from './pages/Testimonials';
 import Error404 from './pages/Error404';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import Terms from './pages/Terms';
+import Sitemap from './pages/Sitemap';
 import ScrollToTop from './components/ScrollToTop';
 import CanonicalUrl from './components/CanonicalUrl';
 
@@ -31,6 +33,8 @@ function App() {
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<Terms />} />
+            <Route path="/sitemap" element={<Sitemap />} />
             <Route path="*" element={<Error404 />} />
           </Routes>
         </main>

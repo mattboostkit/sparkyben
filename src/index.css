@@ -46,11 +46,11 @@
 
 /* Gradient backgrounds */
 .bg-gradient-primary {
-  background: linear-gradient(135deg, #1C4F5A 0%, #51DBB1 100%);
+  background: linear-gradient(135deg, #1C4F5A 0%, #70BBC5 100%);
 }
 
 /* Enhanced focus styles for accessibility */
 .focus-visible:focus {
-  outline: 2px solid #51DBB1;
+  outline: 2px solid #70BBC5;
   outline-offset: 2px;
 }

@@ -16,18 +16,21 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, featured = false }) 
   const IconComponent = (LucideIcons as Record<string, React.FC<any>>)[
     service.icon.charAt(0).toUpperCase() + service.icon.slice(1)
   ] || LucideIcons.Zap;
-  
+
   // Get optimized image URL
   const imageUrl = getServiceCardImage(service.id);
   const imageAlt = getServiceImageAlt(service.id);
-  
+
   if (featured) {
     return (
-      <div className="bg-white rounded-lg shadow-custom overflow-hidden transition-transform hover:shadow-custom-lg transform hover:-translate-y-1 hover:border-teal border border-transparent">
+      <Link
+        to={`/services/${service.id}`}
+        className="block bg-white rounded-lg shadow-custom overflow-hidden transition-transform hover:shadow-custom-lg transform hover:-translate-y-1 hover:border-teal border border-transparent"
+      >
         <div className="h-48 overflow-hidden relative">
-          <ResponsiveImage 
-            src={imageUrl} 
-            alt={imageAlt} 
+          <ResponsiveImage
+            src={imageUrl}
+            alt={imageAlt}
             className="w-full h-full object-cover"
             width={600}
             height={400}
@@ -45,19 +48,16 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, featured = false }) 
             </div>
           </div>
           <p className="text-neutral-dark mb-4">{service.shortDescription}</p>
-          <Link 
-            to={`/services/${service.id}`}
-            className="inline-flex items-center text-teal font-medium hover:underline group"
-          >
+          <div className="inline-flex items-center text-teal font-medium group">
             Learn More <ArrowRight size={16} className="ml-1 group-hover:translate-x-1 transition-transform duration-300" />
-          </Link>
+          </div>
         </div>
-      </div>
+      </Link>
     );
   }
-  
+
   return (
-    <Link 
+    <Link
       to={`/services/${service.id}`}
       className="block bg-white rounded-lg shadow-custom overflow-hidden transition-all hover:shadow-custom-lg transform hover:-translate-y-1 hover:border-teal border border-transparent"
     >

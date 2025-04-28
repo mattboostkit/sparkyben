@@ -10,6 +10,8 @@ Allow: /pricing
 Allow: /testimonials
 Allow: /contact
 Allow: /privacy-policy
+Allow: /terms
+Allow: /sitemap
 
 # Prevent access to any admin or cgi-bin directories if they exist
 Disallow: /admin/

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Search } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 import { services } from '../data/services';
 import { brandImages } from '../data/images';
 
@@ -8,33 +8,34 @@ const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
   const location = useLocation();
-  
+
   // Close dropdown when location changes
   useEffect(() => {
     setServicesDropdownOpen(false);
     setMobileMenuOpen(false);
   }, [location.pathname]);
-  
+
   const closeMenus = () => {
     setMobileMenuOpen(false);
     setServicesDropdownOpen(false);
   };
-  
+
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-3 md:py-0">
           {/* Logo */}
           <Link to="/" onClick={closeMenus} className="flex items-center">
-            <img 
-              src={brandImages.logo.primary} 
-              alt={brandImages.logo.alt} 
-              className="h-12 mr-2"
-              width={200}
-              height={60} 
+            <img
+              src={brandImages.logo.primary}
+              alt={brandImages.logo.alt}
+              className="h-14 mr-2"
+              width={250}
+              height={70}
+              style={{ objectFit: 'contain', maxWidth: '100%', aspectRatio: '1892/529' }}
             />
           </Link>
-          
+
           {/* Emergency Contact - Always visible */}
           <div className="hidden md:flex items-center text-neutral-dark bg-neutral-light px-4 py-2 rounded-full shadow-sm">
             <Phone size={18} className="text-teal mr-2" />
@@ -42,13 +43,13 @@ const Header: React.FC = () => {
               <span className="hidden lg:inline">Emergency Call: </span>01892 336 282
             </a>
           </div>
-          
+
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center">
             <ul className="flex">
               <li>
-                <Link 
-                  to="/" 
+                <Link
+                  to="/"
                   className={`block px-4 py-5 font-medium transition-colors ${
                     location.pathname === '/' ? 'text-teal border-b-2 border-teal' : 'text-secondary hover:text-teal'
                   }`}
@@ -57,8 +58,8 @@ const Header: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link 
-                  to="/about" 
+                <Link
+                  to="/about"
                   className={`block px-4 py-5 font-medium transition-colors ${
                     location.pathname === '/about' ? 'text-teal border-b-2 border-teal' : 'text-secondary hover:text-teal'
                   }`}
@@ -67,7 +68,7 @@ const Header: React.FC = () => {
                 </Link>
               </li>
               <li className="relative">
-                <button 
+                <button
                   className={`flex items-center px-4 py-5 font-medium transition-colors ${
                     location.pathname.startsWith('/services') ? 'text-teal border-b-2 border-teal' : 'text-secondary hover:text-teal'
                   }`}
@@ -81,7 +82,7 @@ const Header: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
-                
+
                 {/* Services Dropdown */}
                 {servicesDropdownOpen && (
                   <div className="absolute left-0 bg-white shadow-lg rounded-b-lg py-2 mt-0 w-64 z-20">
@@ -106,8 +107,8 @@ const Header: React.FC = () => {
                 )}
               </li>
               <li>
-                <Link 
-                  to="/pricing" 
+                <Link
+                  to="/pricing"
                   className={`block px-4 py-5 font-medium transition-colors ${
                     location.pathname === '/pricing' ? 'text-teal border-b-2 border-teal' : 'text-secondary hover:text-teal'
                   }`}
@@ -116,8 +117,8 @@ const Header: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link 
-                  to="/testimonials" 
+                <Link
+                  to="/testimonials"
                   className={`block px-4 py-5 font-medium transition-colors ${
                     location.pathname === '/testimonials' ? 'text-teal border-b-2 border-teal' : 'text-secondary hover:text-teal'
                   }`}
@@ -126,8 +127,8 @@ const Header: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link 
-                  to="/contact" 
+                <Link
+                  to="/contact"
                   className={`block px-4 py-5 font-medium transition-colors ${
                     location.pathname === '/contact' ? 'text-teal border-b-2 border-teal' : 'text-secondary hover:text-teal'
                   }`}
@@ -137,16 +138,10 @@ const Header: React.FC = () => {
               </li>
             </ul>
           </nav>
-          
-          {/* Search Icon */}
-          <div className="hidden md:block">
-            <button className="p-2 text-secondary hover:text-teal transition-colors">
-              <Search size={20} />
-            </button>
-          </div>
-          
+
+
           {/* Mobile Menu Button */}
-          <button 
+          <button
             className="md:hidden p-2 text-secondary"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
@@ -154,7 +149,7 @@ const Header: React.FC = () => {
           </button>
         </div>
       </div>
-      
+
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-white shadow-inner pb-4">
@@ -167,8 +162,8 @@ const Header: React.FC = () => {
           <nav>
             <ul className="space-y-1 px-4">
               <li>
-                <Link 
-                  to="/" 
+                <Link
+                  to="/"
                   onClick={closeMenus}
                   className={`block px-3 py-2 rounded-md font-medium ${
                     location.pathname === '/' ? 'bg-teal text-white' : 'text-secondary hover:bg-neutral-light hover:text-teal'
@@ -178,8 +173,8 @@ const Header: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link 
-                  to="/about" 
+                <Link
+                  to="/about"
                   onClick={closeMenus}
                   className={`block px-3 py-2 rounded-md font-medium ${
                     location.pathname === '/about' ? 'bg-teal text-white' : 'text-secondary hover:bg-neutral-light hover:text-teal'
@@ -189,7 +184,7 @@ const Header: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <button 
+                <button
                   className={`flex w-full items-center justify-between px-3 py-2 rounded-md font-medium ${
                     location.pathname.startsWith('/services') ? 'bg-teal text-white' : 'text-secondary hover:bg-neutral-light hover:text-teal'
                   }`}
@@ -203,7 +198,7 @@ const Header: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={servicesDropdownOpen ? "M5 15l7-7 7 7" : "M19 9l-7 7-7-7"} />
                   </svg>
                 </button>
-                
+
                 {servicesDropdownOpen && (
                   <div className="mt-1 ml-4 border-l-2 border-neutral-light pl-2 space-y-1">
                     {services.map(service => (
@@ -227,8 +222,8 @@ const Header: React.FC = () => {
                 )}
               </li>
               <li>
-                <Link 
-                  to="/pricing" 
+                <Link
+                  to="/pricing"
                   onClick={closeMenus}
                   className={`block px-3 py-2 rounded-md font-medium ${
                     location.pathname === '/pricing' ? 'bg-teal text-white' : 'text-secondary hover:bg-neutral-light hover:text-teal'
@@ -238,8 +233,8 @@ const Header: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link 
-                  to="/testimonials" 
+                <Link
+                  to="/testimonials"
                   onClick={closeMenus}
                   className={`block px-3 py-2 rounded-md font-medium ${
                     location.pathname === '/testimonials' ? 'bg-teal text-white' : 'text-secondary hover:bg-neutral-light hover:text-teal'
@@ -249,8 +244,8 @@ const Header: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link 
-                  to="/contact" 
+                <Link
+                  to="/contact"
                   onClick={closeMenus}
                   className={`block px-3 py-2 rounded-md font-medium ${
                     location.pathname === '/contact' ? 'bg-teal text-white' : 'text-secondary hover:bg-neutral-light hover:text-teal'
