@@ -1,0 +1,138 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ElectricalContractor",
+  "name": "SparkyBen Electrical",
+  "url": "https://sparkyben.co.uk",
+  "logo": "https://sparkyben.co.uk/logo.png",
+  "image": "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+  "description": "Professional electrical services in Tunbridge Wells, Tonbridge, and surrounding areas. NICEIC approved contractor delivering high-quality, reliable electrical solutions.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Tunbridge Wells",
+    "addressRegion": "Kent",
+    "postalCode": "TN1",
+    "addressCountry": "GB"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 51.132377,
+    "longitude": 0.263695
+  },
+  "telephone": "01892 336 282",
+  "email": "info@sparkyben.co.uk",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "17:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday", "Sunday"],
+      "description": "By appointment only"
+    }
+  ],
+  "priceRange": "££",
+  "founder": {
+    "@type": "Person",
+    "name": "Ben Carter"
+  },
+  "sameAs": [
+    "https://www.facebook.com/sparkybenelectrical",
+    "https://www.instagram.com/sparkybenelectrical"
+  ],
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.132377,
+      "longitude": 0.263695
+    },
+    "geoRadius": "15mi"
+  },
+  "potentialAction": {
+    "@type": "ReserveAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://sparkyben.co.uk/contact",
+      "inLanguage": "en-GB",
+      "actionPlatform": [
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/MobileWebPlatform"
+      ]
+    },
+    "result": {
+      "@type": "Reservation",
+      "name": "Book an Electrical Service"
+    }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Electrical Services",
+    "itemListElement": [
+      {
+        "@type": "OfferCatalog",
+        "name": "Residential Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "New Builds, Extensions & Re-wires",
+              "description": "Complete electrical installations for new builds, extensions, and full rewiring projects."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Consumer Unit Replacement",
+              "description": "Upgrade to modern consumer units with enhanced safety features and protection."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Electrical Testing & Certification",
+              "description": "Comprehensive testing and certification services to ensure your property's electrical system is safe and compliant."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "OfferCatalog",
+        "name": "Commercial Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Commercial Electrical Installations",
+              "description": "Professional electrical installations for commercial properties and businesses."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Emergency Lighting",
+              "description": "Installation and maintenance of emergency lighting systems for commercial buildings."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "knowsAbout": [
+    "Electrical Installations",
+    "Consumer Unit Replacements",
+    "Electrical Testing",
+    "EV Charging Points",
+    "Solar PV Systems",
+    "Smart Home Automation"
+  ],
+  "slogan": "Professional, reliable electrical services across Kent",
+  "awards": "NICEIC Approved Contractor"
+}
