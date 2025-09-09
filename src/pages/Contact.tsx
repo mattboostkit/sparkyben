@@ -7,7 +7,7 @@ import {
   AlertTriangle,
   CheckCircle2 
 } from 'lucide-react';
-import ContactForm from '../components/ContactForm';
+import ContactFormNetlify from '../components/ContactFormNetlify';
 import Map from '../components/Map';
 import ResponsiveImage from '../components/ResponsiveImage';
 import { heroImages } from '../data/images';
@@ -120,7 +120,7 @@ const Contact: React.FC = () => {
             <div className="lg:w-2/3">
               <h2 className="text-2xl font-bold text-secondary mb-6">Send Us a Message</h2>
               
-              <ContactForm />
+              <ContactFormNetlify />
               
               <div className="mt-8 bg-primary/5 border border-primary/10 rounded-lg p-5">
                 <div className="flex">

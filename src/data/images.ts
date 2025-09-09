@@ -80,71 +80,92 @@ export const contentImages = {
 };
 
 // Service images - for cards and detailed pages
+// Using kebab-case keys to match service IDs
 export const serviceImages: Record<string, ServiceImage> = {
-  newBuilds: {
+  'new-builds': {
     card: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
     detail: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     alt: "New Builds, Extensions & Re-wires"
   },
-  powerInstallation: {
+  'power-installation': {
     card: "https://ik.imagekit.io/boostkit/SparkyBen/Fuseboard%20600x400.jpg?updatedAt=1744737091461",
     detail: "https://ik.imagekit.io/boostkit/SparkyBen/Fuseboard%20600x400.jpg?updatedAt=1744737091461",
     alt: "Power Installation"
   },
-  lighting: {
+  'lighting': {
     card: "https://ik.imagekit.io/boostkit/SparkyBen/Lighting%202%20600x400.jpg?updatedAt=1744737091252",
     detail: "https://ik.imagekit.io/boostkit/SparkyBen/Lighting%202%20600x400.jpg?updatedAt=1744737091252",
     alt: "Lighting Installations"
   },
-  fireAlarms: {
+  'fire-alarms': {
     card: "https://images.unsplash.com/photo-1584267385494-9fdd9a71ad75?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
     detail: "https://images.unsplash.com/photo-1584267385494-9fdd9a71ad75?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     alt: "Fire and Smoke Alarms"
   },
-  fuseboard: {
+  'fuseboard': {
     card: "https://ik.imagekit.io/boostkit/SparkyBen/Fuseboard%20600x400.jpg?updatedAt=1744737091461",
     detail: "https://ik.imagekit.io/boostkit/SparkyBen/Fuseboard%20600x400.jpg?updatedAt=1744737091461",
     alt: "Fuseboard Replacements"
   },
-  faultFinding: {
+  'fault-finding': {
     card: "https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
     detail: "https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     alt: "Fault Finding and Rectification"
   },
-  testing: {
+  'testing': {
     card: "https://images.unsplash.com/photo-1590935217756-8d784760c10d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
     detail: "https://images.unsplash.com/photo-1590935217756-8d784760c10d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     alt: "Testing & Certification"
   },
-  phoneData: {
+  'phone-data': {
     card: "https://images.unsplash.com/photo-1601996759374-22d3c467c1b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
     detail: "https://images.unsplash.com/photo-1601996759374-22d3c467c1b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     alt: "Phone, TV & Data Cabling"
   },
-  evCharging: {
+  'ev-charging': {
     card: "https://images.unsplash.com/photo-1726220198700-9a50ee1afa6c?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     detail: "https://images.unsplash.com/photo-1726220198700-9a50ee1afa6c?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "Electric Vehicle Charging"
   },
-  solarPv: {
+  'solar-pv': {
     card: "https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
     detail: "https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     alt: "Solar PV"
   },
-  smartHome: {
+  'smart-home': {
     card: "https://images.unsplash.com/photo-1558002038-1055907dc35f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
     detail: "https://images.unsplash.com/photo-1558002038-1055907dc35f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     alt: "Smart Home Systems"
   },
-  security: {
+  'security': {
     card: "https://images.unsplash.com/photo-1557318041-1ce374d55ebf?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
     detail: "https://images.unsplash.com/photo-1557318041-1ce374d55ebf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     alt: "Security Lighting & CCTV"
   },
-  commercial: {
+  'commercial': {
     card: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
     detail: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
     alt: "Commercial Electrical Services"
+  },
+  'emergency': {
+    card: "https://images.unsplash.com/photo-1621905251918-48416bd8575a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    detail: "https://images.unsplash.com/photo-1621905251918-48416bd8575a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    alt: "24/7 Emergency Electrical Services"
+  },
+  'rewiring': {
+    card: "https://images.unsplash.com/photo-1565608438257-fac3c27beb36?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    detail: "https://images.unsplash.com/photo-1565608438257-fac3c27beb36?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    alt: "Complete House Rewiring"
+  },
+  'repairs': {
+    card: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    detail: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    alt: "Electrical Repairs and Maintenance"
+  },
+  'inspections': {
+    card: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    detail: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    alt: "Electrical Inspections and Testing"
   }
 };
 
@@ -158,28 +179,16 @@ export const getHeroImageAlt = (page: string): string => {
 };
 
 export const getServiceCardImage = (serviceId: string): string => {
-  const serviceKey = Object.keys(serviceImages).find(key =>
-    key.toLowerCase() === serviceId.toLowerCase() ||
-    key.toLowerCase().replace(/[^a-z0-9]/g, '') === serviceId.toLowerCase().replace(/[^a-z0-9]/g, '')
-  );
-
-  return serviceKey ? serviceImages[serviceKey].card : serviceImages.newBuilds.card;
+  // Direct lookup since we're now using kebab-case keys
+  return serviceImages[serviceId]?.card || serviceImages['new-builds'].card;
 };
 
 export const getServiceDetailImage = (serviceId: string): string => {
-  const serviceKey = Object.keys(serviceImages).find(key =>
-    key.toLowerCase() === serviceId.toLowerCase() ||
-    key.toLowerCase().replace(/[^a-z0-9]/g, '') === serviceId.toLowerCase().replace(/[^a-z0-9]/g, '')
-  );
-
-  return serviceKey ? serviceImages[serviceKey].detail : serviceImages.newBuilds.detail;
+  // Direct lookup since we're now using kebab-case keys
+  return serviceImages[serviceId]?.detail || serviceImages['new-builds'].detail;
 };
 
 export const getServiceImageAlt = (serviceId: string): string => {
-  const serviceKey = Object.keys(serviceImages).find(key =>
-    key.toLowerCase() === serviceId.toLowerCase() ||
-    key.toLowerCase().replace(/[^a-z0-9]/g, '') === serviceId.toLowerCase().replace(/[^a-z0-9]/g, '')
-  );
-
-  return serviceKey ? serviceImages[serviceKey].alt : serviceImages.newBuilds.alt;
+  // Direct lookup since we're now using kebab-case keys
+  return serviceImages[serviceId]?.alt || serviceImages['new-builds'].alt;
 };

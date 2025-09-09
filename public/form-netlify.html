@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Handler</title>
+</head>
+<body>
+  <!-- This hidden form is detected by Netlify's build process -->
+  <!-- It tells Netlify which forms to expect and process -->
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <input type="tel" name="phone" />
+    <select name="service">
+      <option value="">Select a service</option>
+      <option value="new-installation">New Installation</option>
+      <option value="rewiring">Complete Rewiring</option>
+      <option value="lighting">Lighting Installation</option>
+      <option value="fuseboard">Consumer Unit Replacement</option>
+      <option value="fault-finding">Fault Finding</option>
+      <option value="testing">Testing & Certification (EICR)</option>
+      <option value="ev-charger">EV Charger Installation</option>
+      <option value="solar">Solar PV Installation</option>
+      <option value="smart-home">Smart Home Systems</option>
+      <option value="emergency">Emergency Repair</option>
+      <option value="other">Other</option>
+    </select>
+    <textarea name="message"></textarea>
+    <input name="bot-field" />
+  </form>
+</body>
+</html>
