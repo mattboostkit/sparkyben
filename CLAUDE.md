@@ -2,6 +2,16 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## ⚠️ CRITICAL CHECKS - ALWAYS VERIFY
+
+### Form Integration
+**ALWAYS CHECK:** When reviewing any form on the site, verify it's properly connected to the backend:
+- ✅ Netlify Forms: Look for `data-netlify="true"` attribute and hidden form in index.html
+- ✅ Form submission handler: Should POST to Netlify endpoint, not just console.log
+- ✅ Never leave forms with only console.log or alert() - they must submit somewhere
+- ✅ Check for success/error handling and user feedback
+- **Current Forms:** Contact form uses Netlify Forms (ContactFormNetlify component)
+
 ## Project Overview
 
 SparkyBen Electrical is a React-based website for an electrical services company built with TypeScript, Vite, and Tailwind CSS. The site showcases various electrical services and includes multiple pages like services, pricing, testimonials, and contact forms.
