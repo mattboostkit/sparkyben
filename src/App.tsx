@@ -8,7 +8,7 @@ import Services from './pages/Services';
 import ServiceDetail from './pages/ServiceDetail';
 import Pricing from './pages/Pricing';
 import Contact from './pages/Contact';
-import Testimonials from './pages/Testimonials';
+import TestimonialsWithWidget from './pages/TestimonialsWithWidget';
 import Error404 from './pages/Error404';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Terms from './pages/Terms';
@@ -39,7 +39,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/services/:id" element={<ServiceDetail />} />
             <Route path="/pricing" element={<Pricing />} />
-            <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/testimonials" element={<TestimonialsWithWidget />} />
             <Route path="/contact" element={<Contact />} />
             
             {/* Location Pages */}

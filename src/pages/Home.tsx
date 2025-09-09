@@ -3,12 +3,11 @@ import { Link } from 'react-router-dom';
 import { CheckCircle2, Phone, ArrowRight, Clock, MapPin } from 'lucide-react';
 import { Helmet } from 'react-helmet';
 import ServiceCard from '../components/ServiceCard';
-import TestimonialCard from '../components/TestimonialCard';
 import CTABanner from '../components/CTABanner';
 import SchemaOrgScript from '../components/SchemaOrgScript';
 import ResponsiveImage from '../components/ResponsiveImage';
+import HiLevelReviews from '../components/HiLevelReviews';
 import { services } from '../data/services';
-import { testimonials } from '../data/testimonials';
 import { heroImages, contentImages } from '../data/images';
 
 const Home: React.FC = () => {
@@ -16,9 +15,6 @@ const Home: React.FC = () => {
   const featuredServices = services.filter(service => 
     ['new-builds', 'power-installation', 'lighting', 'fuseboard', 'ev-charging', 'solar-pv'].includes(service.id)
   ).slice(0, 6);
-  
-  // Get top 3 testimonials
-  const featuredTestimonials = testimonials.slice(0, 3);
   
   return (
     <div>
@@ -200,22 +196,17 @@ const Home: React.FC = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {featuredTestimonials.map((testimonial, index) => (
-              <TestimonialCard 
-                key={testimonial.id} 
-                testimonial={testimonial}
-                highlighted={index === 0} 
-              />
-            ))}
+          {/* Hi-Level Reviews Widget */}
+          <div className="max-w-5xl mx-auto mb-8">
+            <HiLevelReviews className="shadow-custom rounded-lg overflow-hidden" />
           </div>
           
-          <div className="text-center mt-10">
+          <div className="text-center">
             <Link 
               to="/testimonials" 
-              className="text-teal font-medium hover:underline inline-flex items-center group"
+              className="bg-teal hover:bg-teal/90 text-white font-medium px-6 py-3 rounded-md transition-colours inline-flex items-center"
             >
-              Read More Reviews <ArrowRight size={16} className="ml-1 group-hover:translate-x-1 transition-transform duration-300" />
+              View All Reviews <ArrowRight size={16} className="ml-2" />
             </Link>
           </div>
         </div>
