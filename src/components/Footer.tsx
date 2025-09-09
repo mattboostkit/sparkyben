@@ -103,7 +103,7 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center">
                 <CheckCircle size={18} className="text-teal mr-2" />
-                <span className="text-neutral-light">Fully Insured - £2M Public Liability</span>
+                <span className="text-neutral-light">Fully Insured - £5M Public Liability</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle size={18} className="text-teal mr-2" />

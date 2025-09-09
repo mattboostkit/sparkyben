@@ -81,7 +81,7 @@ const ServiceDetail: React.FC = () => {
                   </li>
                   <li className="flex items-start">
                     <Check size={20} className="text-teal mr-2 mt-1 flex-shrink-0" />
-                    <span>Fully insured with £2M public liability insurance</span>
+                    <span>Fully insured with £5M public liability insurance</span>
                   </li>
                   <li className="flex items-start">
                     <Check size={20} className="text-teal mr-2 mt-1 flex-shrink-0" />

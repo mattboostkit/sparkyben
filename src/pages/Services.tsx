@@ -1,14 +1,34 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import ServiceCard from '../components/ServiceCard';
 import CTABanner from '../components/CTABanner';
 import ResponsiveImage from '../components/ResponsiveImage';
+import EnhancedSchemaOrg from '../components/EnhancedSchemaOrg';
 import { services, serviceCategories } from '../data/services';
 import { heroImages } from '../data/images';
 
 const Services: React.FC = () => {
   return (
     <div>
+      <Helmet>
+        <title>Electrical Services Kent | Domestic & Commercial Electrician | SparkyBen</title>
+        <meta name="description" content="Complete electrical services in Tunbridge Wells, Tonbridge & Sevenoaks. Rewiring, consumer units, EV charging, emergency repairs. NICEIC approved with £5M insurance. Call 01892 336 282." />
+        <meta name="keywords" content="electrical services Kent, electrician services, rewiring, consumer unit, EV charging, emergency electrician, NICEIC electrician" />
+        <link rel="canonical" href="https://sparkyben.co.uk/services" />
+        <meta property="og:title" content="Electrical Services Kent | Domestic & Commercial Electrician" />
+        <meta property="og:description" content="Complete electrical services in Kent. NICEIC approved with £5M insurance. Call 01892 336 282." />
+        <meta property="og:url" content="https://sparkyben.co.uk/services" />
+      </Helmet>
+      
+      <EnhancedSchemaOrg 
+        type="breadcrumb"
+        breadcrumbs={[
+          { name: 'Home', url: 'https://sparkyben.co.uk' },
+          { name: 'Services', url: 'https://sparkyben.co.uk/services' }
+        ]}
+      />
+      
       {/* Hero Section */}
       <section className="relative bg-secondary text-white py-16">
         <div className="absolute inset-0 opacity-20">

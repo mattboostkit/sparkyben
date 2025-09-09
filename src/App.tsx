@@ -16,6 +16,15 @@ import Sitemap from './pages/Sitemap';
 import ScrollToTop from './components/ScrollToTop';
 import CanonicalUrl from './components/CanonicalUrl';
 
+// Location Pages
+import TunbridgeWells from './pages/locations/TunbridgeWells';
+import Tonbridge from './pages/locations/Tonbridge';
+import Sevenoaks from './pages/locations/Sevenoaks';
+
+// Advice Pages
+import Advice from './pages/Advice';
+import ElectricalSafetyGuide from './pages/advice/ElectricalSafetyGuide';
+
 function App() {
   return (
     <Router>
@@ -32,9 +41,21 @@ function App() {
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/contact" element={<Contact />} />
+            
+            {/* Location Pages */}
+            <Route path="/locations/tunbridge-wells" element={<TunbridgeWells />} />
+            <Route path="/locations/tonbridge" element={<Tonbridge />} />
+            <Route path="/locations/sevenoaks" element={<Sevenoaks />} />
+            
+            {/* Advice Pages */}
+            <Route path="/advice" element={<Advice />} />
+            <Route path="/advice/electrical-safety-guide" element={<ElectricalSafetyGuide />} />
+            
+            {/* Legal Pages */}
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/sitemap" element={<Sitemap />} />
+            
             <Route path="*" element={<Error404 />} />
           </Routes>
         </main>

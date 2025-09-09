@@ -159,7 +159,7 @@ const Terms: React.FC = () => {
               
               <h2>9. Liability and Insurance</h2>
               <p>
-                SparkyBen Electrical maintains comprehensive public liability insurance of £2 million to cover any damage or injury that may occur during the provision of our services.
+                SparkyBen Electrical maintains comprehensive public liability insurance of £5 million to cover any damage or injury that may occur during the provision of our services.
               </p>
               <p>
                 Our liability is limited to the cost of rectifying any defective work or replacing any defective materials. We are not liable for any indirect, consequential, or economic losses.

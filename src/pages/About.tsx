@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import { 
   CheckCircle2, 
   User, 
@@ -11,6 +12,7 @@ import {
 import CTABanner from '../components/CTABanner';
 import Faq from '../components/Faq';
 import ResponsiveImage from '../components/ResponsiveImage';
+import EnhancedSchemaOrg from '../components/EnhancedSchemaOrg';
 import { faqs } from '../data/faqs';
 import { heroImages, contentImages } from '../data/images';
 
@@ -24,6 +26,24 @@ const About: React.FC = () => {
   
   return (
     <div>
+      <Helmet>
+        <title>About SparkyBen Electrical | NICEIC Approved Electrician in Kent</title>
+        <meta name="description" content="Learn about SparkyBen Electrical, your trusted NICEIC approved electrician serving Tunbridge Wells, Tonbridge, Sevenoaks and surrounding Kent areas since 2010. Fully insured with £5M public liability." />
+        <meta name="keywords" content="about SparkyBen, electrician Kent, NICEIC approved, Ben Carter electrician, Tunbridge Wells electrician, reliable electrician" />
+        <link rel="canonical" href="https://sparkyben.co.uk/about" />
+        <meta property="og:title" content="About SparkyBen Electrical | NICEIC Approved Electrician in Kent" />
+        <meta property="og:description" content="Learn about SparkyBen Electrical, your trusted NICEIC approved electrician serving Kent since 2010." />
+        <meta property="og:url" content="https://sparkyben.co.uk/about" />
+      </Helmet>
+      
+      <EnhancedSchemaOrg 
+        type="breadcrumb"
+        breadcrumbs={[
+          { name: 'Home', url: 'https://sparkyben.co.uk' },
+          { name: 'About', url: 'https://sparkyben.co.uk/about' }
+        ]}
+      />
+      
       {/* Hero Section */}
       <section className="relative bg-secondary text-white py-16">
         <div className="absolute inset-0 opacity-20">
@@ -92,7 +112,7 @@ const About: React.FC = () => {
                   <div>
                     <h3 className="font-semibold text-secondary">Fully Insured</h3>
                     <p className="text-neutral-dark text-sm">
-                      We carry £2 million public liability insurance for your peace of mind.
+                      We carry £5 million public liability insurance for your peace of mind.
                     </p>
                   </div>
                 </div>
@@ -174,7 +194,7 @@ const About: React.FC = () => {
                   </div>
                   <div className="flex items-center">
                     <CheckCircle2 size={18} className="text-teal mr-2" />
-                    <span className="text-neutral-dark">Fully Insured - £2M Public Liability</span>
+                    <span className="text-neutral-dark">Fully Insured - £5M Public Liability</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle2 size={18} className="text-teal mr-2" />
